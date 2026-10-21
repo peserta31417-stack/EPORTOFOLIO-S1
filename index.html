@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portofolio - Inti Rakhmawati, S.Si.</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="top-nav">
+        <button class="nav-toggle" onclick="toggleNavMenu()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12h18M3 6h18M3 18h18"/>
+            </svg>
+        </button>
+        <div class="nav-menu" id="navMenu">
+            <button class="nav-item" onclick="showPage('homepage'); toggleNavMenu()">
+                <span class="nav-icon">🏠</span>
+                Beranda
+            </button>
+            <button class="nav-item" onclick="showPage('navigation'); toggleNavMenu()">
+                <span class="nav-icon">📚</span>
+                Refleksi
+            </button>
+            <button class="nav-item" onclick="showPage('closing'); toggleNavMenu()">
+                <span class="nav-icon">🎓</span>
+                Penutup
+            </button>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+    <div id="homepage" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="main-title">Selamat Datang di E-Portofolio</h1>
+                <p class="subtitle">Perjalanan, Pembelajaran, dan Dedikasi Menuju Guru Profesional yang Berdampak</p>
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="img/profile-photo.png" alt="Inti Rakhmawati, S.Si.">
+                    </div>
+                    <div class="profile-info">
+                        <h2 class="name">Inti Rakhmawati, S.Si.</h2>
+                        <span class="badge">Calon Guru Profesional</span>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="showPage('navigation')">
+                    Mulai Menjelajah
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="hero-illustration">
+                <img src="img/profile-photo.png" alt="Inti Rakhmawati, S.Si.">
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Page -->
+    <div id="navigation" class="page">
+        <div class="navigation-container">
+            <h1 class="page-title">Refleksi Pembelajaran</h1>
+            <p class="page-subtitle">Pilih mata kuliah untuk melihat refleksi dan artefak</p>
+            <div class="courses-grid">
+                <div class="course-card" onclick="showReflection('filosofi')">
+                    <div class="course-icon">📚</div>
+                    <h3>Filosofi Pendidikan dan Pendidikan Nilai</h3>
+                    <p>Jelajahi filosofi dan nilai-nilai pendidikan</p>
+                </div>
+                <div class="course-card" onclick="showReflection('ppl')">
+                    <div class="course-icon">🏫</div>
+                    <h3>Praktik Pengalaman Lapangan (PPL) Terbimbing</h3>
+                    <p>Pengalaman praktik lapangan terbimbing</p>
+                </div>
+                <div class="course-card" onclick="showReflection('peserta-didik')">
+                    <div class="course-icon">👥</div>
+                    <h3>Pemahaman tentang Peserta Didik dan Pembelajaran</h3>
+                    <p>Memahami karakteristik peserta didik</p>
+                </div>
+                <div class="course-card" onclick="showReflection('growth-mindset')">
+                    <div class="course-icon">🌱</div>
+                    <h3>Pola Pikir Bertumbuh (Growth Mindset)</h3>
+                    <p>Mengembangkan mindset berkembang</p>
+                </div>
+                <div class="course-card" onclick="showReflection('pembelajaran-mendalam')">
+                    <div class="course-icon">🎯</div>
+                    <h3>Pembelajaran Mendalam dan Asesmen Dasar</h3>
+                    <p>Strategi pembelajaran mendalam</p>
+                </div>
+                <div class="course-card" onclick="showReflection('computational-thinking')">
+                    <div class="course-icon">💻</div>
+                    <h3>Computational Thinking</h3>
+                    <p>Berpikir komputasional dalam pendidikan</p>
+                </div>
+            </div>
+            <button class="back-button" onclick="showPage('homepage')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Kembali ke Beranda
+            </button>
+        </div>
+    </div>
+
+    <!-- Reflection Pages -->
+    <div id="reflection-filosofi" class="page reflection-page">
+        <div class="reflection-container">
+            <h1 class="reflection-title">Filosofi Pendidikan dan Pendidikan Nilai</h1>
+            <div class="reflection-content">
+                <div class="section">
+                    <h2>Connection</h2>
+                    <p>Mata kuliah Filosofi Pendidikan dan Pendidikan Nilai memberikan pemahaman bahwa tugas guru tidak hanya menyampaikan materi, tetapi juga mendidik peserta didik agar berkembang secara utuh sesuai kodrat alam dan kodrat zamannya. Guru memiliki peran sebagai fasilitator, pembimbing, sekaligus teladan dalam membentuk karakter peserta didik. Proses pembelajaran harus menciptakan lingkungan yang aman, bermakna, dan menghargai keberagaman potensi setiap peserta didik.</p>
+                </div>
+                <div class="section">
+                    <h2>Challenge</h2>
+                    <p>Tantangan yang saya hadapi adalah mengintegrasikan pendidikan nilai secara konsisten dalam setiap pembelajaran, menjadi teladan melalui sikap dan tindakan, serta menjaga profesionalisme dan kode etik guru di tengah berbagai tuntutan tugas dan administrasi. Kondisi ini menuntut saya untuk terus belajar, melakukan refleksi, dan berkomitmen memperbaiki praktik pembelajaran secara berkelanjutan.</p>
+                </div>
+                <div class="section">
+                    <h2>Concept</h2>
+                    <p><strong>Landasan Filosofi Pendidikan Nasional</strong><br>
+                    Filosofi Pendidikan Ki Hajar Dewantara memberikan pandangan bahwa Pendidikan harus sesuai kodrat alam dan kodrat zaman dengan berlandaskan nilai-nilai Pancasila. Guru berperan sebagai teladan, pembimbing, dan fasilitator yang berpihak pada kebutuhan peserta didik.</p>
+                    <p><strong>Pola Pikir Bertumbuh Dalam Pendidikan Nasional</strong><br>
+                    Guru harus memahami bahwa kemampuan peserta didik dapat terus berkembang melalui usaha, latihan, dan pengalaman belajar. Oleh karena itu, guru perlu memberikan motivasi, apresiasi terhadap proses, serta umpan balik yang membangun.</p>
+                    <p><strong>Pendidikan Nilai dalam Kerangka Pendidikan Nasional</strong><br>
+                    Pendidikan tidak hanya berfokus pada pencapaian akademik, tetapi juga pada pembentukan karakter. Nilai-nilai seperti kejujuran, tanggung jawab, disiplin, gotong royong, dan kepedulian perlu diintegrasikan dalam setiap proses pembelajaran.</p>
+                    <p><strong>Kode Etik Guru</strong><br>
+                    Guru harus menjalankan profesinya dengan profesionalisme, integritas, dan tanggung jawab. Guru juga berkewajiban menghormati hak peserta didik, menjaga etika profesi, serta terus mengembangkan kompetensi untuk meningkatkan kualitas pembelajaran.</p>
+                </div>
+                <div class="section">
+                    <h2>Change</h2>
+                    <p><strong>Berpusat pada Peserta Didik</strong><br>
+                    Merancang pembelajaran yang sesuai dengan kebutuhan, karakteristik, dan kemampuan peserta didik sehingga mereka berperan aktif dalam proses belajar.</p>
+                    <p><strong>Menanamkan Nilai dan Karakter</strong><br>
+                    Menanamkan nilai-nilai seperti kejujuran, disiplin, tanggung jawab, kerja sama, dan rasa percaya diri dalam setiap kegiatan pembelajaran matematika.</p>
+                    <p><strong>Mendorong Berpikir Kritis dan Kolaboratif</strong><br>
+                    Memberikan kesempatan kepada peserta didik untuk menganalisis masalah, berdiskusi, mengemukakan pendapat, serta menghargai ide orang lain.</p>
+                    <p><strong>Reflektif dan Terus Berinovasi</strong><br>
+                    Melakukan evaluasi terhadap proses pembelajaran secara berkala dan memanfaatkan hasil refleksi untuk meningkatkan kualitas pembelajaran.</p>
+                    <p><strong>Menciptakan Pembelajaran yang Bermakna dan Menyenangkan</strong><br>
+                    Menciptakan suasana belajar yang aktif, interaktif, dan kontekstual sehingga peserta didik merasa nyaman, termotivasi, dan mudah memahami konsep.</p>
+                    <p><strong>Menjunjung Tinggi Profesionalisme dan Etika Guru</strong><br>
+                    Melaksanakan tugas dengan integritas, tanggung jawab, dan etika profesi serta memberikan layanan pendidikan yang adil, berkualitas, dan berorientasi pada perkembangan peserta didik.</p>
+                </div>
+                <div class="section">
+                    <h2>Artefak</h2>
+                    <div class="artefak-list">
+                        <div class="artefak-item">
+                            <strong>1. Kasus Pak Dudung - SMPN 3 Gresik</strong>
+                            <a href="artefaks/4C_FPPN_Kasus 2 (Pak Dudung)_SMPN 3 Gresik (1).pdf" target="_blank" class="download-link">
+                                📄 Download PDF
+                            </a>
+                            <div class="artefak-reason">
+                                <strong>Alasan Memilih:</strong> Artefak ini menunjukkan kemampuan saya dalam menganalisis kasus nyata di sekolah dan menerapkan prinsip filosofi pendidikan dalam memberikan solusi.
+                            </div>
+                        </div>
+                        <div class="artefak-item">
+                            <strong>2. Aktivitas Debat Konstruktif (Tug-of-War)</strong>
+                            <a href="artefaks/Aktivitas 2.3.2 Debat Konstruktif (Tug-of-War)  (2).pdf" target="_blank" class="download-link">
+                                📄 Download PDF
+                            </a>
+                            <div class="artefak-reason">
+                                <strong>Alasan Memilih:</strong> Menunjukkan partisipasi aktif dalam diskusi filosofis dan kemampuan berpikir kritis dalam menghadapi perbedaan pendapat secara konstruktif.
+                            </div>
+                        </div>
+                        <div class="artefak-item">
+                            <strong>3. LK 1.4 Ali Mogok Sekolah - SMPN 3 Gresik</strong>
+                            <a href="artefaks/LK 1.4 Ali Mogok Sekolah_SMPN 3 Gresik.pdf" target="_blank" class="download-link">
+                                📄 Download PDF
+                            </a>
+                            <div class="artefak-reason">
+                                <strong>Alasan Memilih:</strong> Merefleksikan pemahaman saya tentang pendekatan humanistik dalam menangani masalah peserta didik dan pentingnya empati dalam pendidikan.
+                            </div>
+                        </div>
+                        <div class="artefak-item">
+                            <strong>4. FPPN 4.E - Inti Rakhmawati</strong>
+                            <a href="artefaks/FPPN 4.E (Inti Rakhmawati) (1).pdf" target="_blank" class="download-link">
+                                📄 Download PDF
+                            </a>
+                            <div class="artefak-reason">
+                                <strong>Alasan Memilih:</strong> Menunjukkan sintesis pemahaman tentang filosofi pendidikan dan penerapannya dalam praktik pembelajaran yang berpusat pada peserta didik.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Refleksi Pengalaman Belajar</h2>
+                    <p>Pembelajaran dalam mata kuliah ini membuka wawasan saya bahwa pendidikan adalah seni membentuk manusia seutuhnya. Diskusi-diskusi kelas tentang nilai-nilai pendidikan membuat saya menyadari tanggung jawab moral seorang guru sangat besar. Saya belajar bahwa setiap interaksi dengan peserta didik adalah kesempatan untuk menanamkan nilai-nilai positif.</p>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="showPage('homepage')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Beranda
+                </button>
+                <button class="back-button" onclick="showPage('navigation')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Navigasi
+                </button>
+            </div>
+            <div class="page-navigation">
+                <button class="nav-button prev" onclick="showPage('navigation')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Navigasi
+                </button>
+                <button class="nav-button next" onclick="showReflection('ppl')">
+                    PPL Terbimbing
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="reflection-ppl" class="page reflection-page">
+        <div class="reflection-container">
+            <h1 class="reflection-title">Praktik Pengalaman Lapangan (PPL) Terbimbing</h1>
+            <div class="reflection-content">
+                <div class="section">
+                    <h2>Connection</h2>
+                    <p>Materi pada mata kuliah ini tentu sangat berkaitan dengan peran saya sebagai calon guru. Mata kuliah ini merupakan bentuk implementasi nyata dari setiap mata kuliah yang saya pelajari selama PPG. Melalui mata kuliah ini saya mendapatkan pengalaman mengenai implementasi nyata pembelajaran di sekolah dengan karakteristik peserta didik yang sangat beragam. Melalui mata kuliah ini saya menyadari pentingnya fleksibilitas seorang guru karena kondisi lapangan tidak selalu sama dengan bayangan kita saat menyusun rencana pembelajaran.</p>
+                </div>
+                <div class="section">
+                    <h2>Challenge</h2>
+                    <p>Materi perkuliahan ini yang cukup berbeda dari praktik pembelajaran yang selama ini saya lakukan adalah pendekatan Culturally Responsive Teaching (CRT) dan Teaching at the Right Level (TaRL). Kedua pendekatan tersebut sebelumnya masih cukup asing bagi saya karena selama ini saya cenderung memberikan perlakuan pembelajaran yang hampir sama kepada seluruh murid. Setelah mempelajari TaRL, saya mulai memahami pentingnya menyesuaikan pembelajaran dengan kemampuan awal murid yang dapat diketahui melalui asesmen diagnostik. Namun, dalam praktiknya, saya masih belum menerapkan TaRL karena saya masih merasa bingung bagaimana menyusunnya. Penerapan TaRL ini masih menjadi tantangan bagi saya karena hasil asesmen diagnostik belum sepenuhnya dapat menggambarkan kemampuan aktual murid di kelas saya. Beberapa murid masih cenderung mencontek jawaban teman ketika mengerjakan asesmen diagnostik sehingga hasil yang diperoleh relatif seragam. Kondisi tersebut membuat saya kesulitan dalam memetakan kemampuan awal dan menentukan bentuk scaffolding yang sesuai. Sementara itu, CRT sebenarnya sudah pernah saya terapkan melalui pengaitan materi dengan konteks budaya dan kehidupan murid, tetapi saya merasa bahwa penerapannya belum sepenuhnya sampai pada esensi pembelajaran yang responsif terhadap latar belakang budaya murid. Terlebih lagi, karakteristik murid yang cenderung kurang tertarik pada bacaan yang panjang membuat saya perlu mencari cara yang lebih sederhana dan menarik agar konteks budaya tidak hanya menjadi contoh dalam pembelajaran, tetapi dapat benar-benar dipahami dan dimaknai oleh murid.</p>
+                </div>
+                <div class="section">
+                    <h2>Concept</h2>
+                    <p>Sebagai calon guru, salah satu konsep utama yang semakin saya pahami melalui PPL 2 adalah bahwa pembelajaran perlu dirancang berdasarkan kebutuhan dan kondisi nyata murid, bukan hanya berdasarkan materi yang harus disampaikan. Saya mulai memahami bahwa setiap murid memiliki kemampuan awal, kebutuhan, dan karakteristik yang berbeda sehingga guru perlu melakukan asesmen dan pengamatan sebelum menentukan strategi pembelajaran. Pemahaman tersebut semakin saya sadari melalui konsep Teaching at the Right Level (TaRL), yang menekankan pentingnya menyesuaikan pembelajaran dengan tingkat kemampuan aktual murid, serta Culturally Responsive Teaching (CRT), yang mengajarkan pentingnya mengaitkan pembelajaran dengan latar belakang dan konteks kehidupan murid. Selain itu, saya semakin memahami bahwa peran guru bukan hanya menyampaikan materi, tetapi juga menjadi fasilitator dan pamong yang menciptakan kondisi agar murid dapat belajar sesuai kebutuhannya. Konsep-konsep tersebut menjadi penting bagi saya karena selama praktik mengajar saya menyadari bahwa memberikan perlakuan yang sama kepada seluruh murid belum tentu dapat memenuhi kebutuhan belajar mereka. Oleh karena itu, saya perlu terus belajar untuk menjadi guru yang lebih peka terhadap kondisi murid dan mampu menyesuaikan pembelajaran berdasarkan kebutuhan mereka.</p>
+                </div>
+                <div class="section">
+                    <h2>Change</h2>
+                    <p><strong>Beberapa perubahan yang ingin saya lakukan adalah:</strong></p>
+                    <p>1. Meningkatkan kemampuan dalam memahami karakteristik, kebutuhan, dan perkembangan setiap murid agar dapat menjadi guru yang profesional dan reflektif.</p>
+                    <p>2. Membiasakan diri melakukan analisis kebutuhan murid sebelum merancang perencanaan pembelajaran, sehingga strategi yang digunakan lebih relevan dengan kebutuhan murid.</p>
+                    <p>3. Menjadi guru yang lebih adaptif dan tidak terlalu terpaku pada rencana. Saya memahami bahwa perangkat dan rencana pembelajaran merupakan pedoman, bukan sesuatu yang harus selalu dilaksanakan secara kaku. Kondisi peserta didik dan situasi kelas dapat berubah sehingga guru perlu mampu mengambil keputusan dan melakukan penyesuaian secara spontan.</p>
+                    <p>4. Menjadikan asesmen sebagai bagian dari proses perbaikan pembelajaran, sehingga hasil asesmen tidak berhenti pada pemberian nilai, tetapi digunakan untuk menentukan tindak lanjut yang sesuai dengan kebutuhan murid.</p>
+                </div>
+                <div class="section">
+                    <h2>Artefak</h2>
+                    <div class="artefak-item">
+                        <strong>Artefak yang Dipilih:</strong> Rencana Pelaksanaan Pembelajaran (RPP) dan video pengajaran
+                    </div>
+                    <div class="artefak-reason">
+                        <strong>Alasan Memilih Artefak:</strong> RPP menunjukkan perencanaan matang, sementara video merefleksikan implementasi pembelajaran di kelas nyata.
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Refleksi Pengalaman Belajar</h2>
+                    <p>Pengalaman PPL adalah transisi penting dalam perjalanan saya menjadi guru. Saya belajar bahwa rencana pembelajaran yang sempurna tidak menjamin hasil yang sempurna. Yang lebih penting adalah kemampuan membaca situasi kelas dan merespons kebutuhan siswa secara real-time. Feedback dari guru pembimbing sangat berharga dalam memperbaiki praktik mengajar saya.</p>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="showPage('homepage')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Beranda
+                </button>
+                <button class="back-button" onclick="showPage('navigation')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Navigasi
+                </button>
+            </div>
+            <div class="page-navigation">
+                <button class="nav-button prev" onclick="showReflection('filosofi')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Filosofi Pendidikan
+                </button>
+                <button class="nav-button next" onclick="showReflection('peserta-didik')">
+                    Peserta Didik
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="reflection-peserta-didik" class="page reflection-page">
+        <div class="reflection-container">
+            <h1 class="reflection-title">Pemahaman tentang Peserta Didik dan Pembelajaran</h1>
+            <div class="reflection-content">
+                <div class="section">
+                    <h2>Connection</h2>
+                    <p>Mata kuliah ini menghubungkan saya dengan realitas bahwa setiap peserta didik adalah individu unik dengan kebutuhan dan cara belajar yang berbeda.</p>
+                </div>
+                <div class="section">
+                    <h2>Challenge</h2>
+                    <p>Tantangan adalah merancang pembelajaran yang inklusif dan dapat memenuhi kebutuhan beragam siswa dalam satu kelas.</p>
+                </div>
+                <div class="section">
+                    <h2>Concept</h2>
+                    <p>Konsep utama adalah diferensiasi pembelajaran dan pemahaman tentang gaya belajar, kecerdasan majemuk, dan karakteristik perkembangan peserta didik.</p>
+                </div>
+                <div class="section">
+                    <h2>Change</h2>
+                    <p>Saya berubah dari guru yang mengharapkan semua siswa belajar dengan cara yang sama, menjadi guru yang menghargai keberagaman dalam pembelajaran.</p>
+                </div>
+                <div class="section">
+                    <h2>Artefak</h2>
+                    <div class="artefak-item">
+                        <strong>Artefak yang Dipilih:</strong> Analisis profil kelas dan strategi diferensiasi
+                    </div>
+                    <div class="artefak-reason">
+                        <strong>Alasan Memilih Artefak:</strong> Analisis ini menunjukkan kemampuan saya memahami karakteristik siswa dan merancang strategi pembelajaran yang sesuai.
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Refleksi Pengalaman Belajar</h2>
+                    <p>Mata kuliah ini membuka mata saya bahwa "one size fits all" tidak berlaku dalam pendidikan. Saya belajar tentang teori perkembangan kognitif, emosional, dan sosial peserta didik. Pemahaman ini sangat penting untuk merancang pembelajaran yang efektif dan bermakna. Saya menyadari bahwa mengenal siswa secara personal adalah kunci pembelajaran yang sukses.</p>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="showPage('homepage')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Beranda
+                </button>
+                <button class="back-button" onclick="showPage('navigation')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Navigasi
+                </button>
+            </div>
+            <div class="page-navigation">
+                <button class="nav-button prev" onclick="showReflection('ppl')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    PPL Terbimbing
+                </button>
+                <button class="nav-button next" onclick="showReflection('growth-mindset')">
+                    Growth Mindset
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="reflection-growth-mindset" class="page reflection-page">
+        <div class="reflection-container">
+            <h1 class="reflection-title">Pola Pikir Bertumbuh (Growth Mindset)</h1>
+            <div class="reflection-content">
+                <div class="section">
+                    <h2>Connection</h2>
+                    <p>Mata kuliah ini menghubungkan saya dengan pemahaman bahwa kemampuan dapat dikembangkan melalui usaha dan strategi yang tepat.</p>
+                </div>
+                <div class="section">
+                    <h2>Challenge</h2>
+                    <p>Tantangan terbesar adalah mengubah pola pikir fixed mindset yang sudah terbentuk selama ini, baik pada diri sendiri maupun siswa.</p>
+                </div>
+                <div class="section">
+                    <h2>Concept</h2>
+                    <p>Konsep utama adalah perbedaan antara growth mindset dan fixed mindset, serta bagaimana language dan feedback dapat mempengaruhi mindset siswa.</p>
+                </div>
+                <div class="section">
+                    <h2>Change</h2>
+                    <p>Saya berubah dari seseorang yang takut akan kegagalan menjadi seseorang yang melihat kegagalan sebagai kesempatan untuk belajar dan berkembang.</p>
+                </div>
+                <div class="section">
+                    <h2>Artefak</h2>
+                    <div class="artefak-item">
+                        <strong>Artefak yang Dipilih:</strong> Jurnal refleksi pribadi tentang perubahan mindset
+                    </div>
+                    <div class="artefak-reason">
+                        <strong>Alasan Memilih Artefak:</strong> Jurnal ini menunjukkan perjalanan transformasi mindset saya dan rencana penerapannya dalam pembelajaran.
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Refleksi Pengalaman Belajar</h2>
+                    <p>Mata kuliah ini sangat transformatif bagi saya. Saya belajar bahwa cara kita memandang kemampuan dan kecerdasan sangat mempengaruhi cara kita belajar dan mengajar. Carol Dweck's research tentang growth mindset memberikan framework yang jelas. Saya sekarang lebih sadar dalam memberikan praise yang berfokus pada proses dan usaha, bukan hanya hasil akhir.</p>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="showPage('homepage')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Beranda
+                </button>
+                <button class="back-button" onclick="showPage('navigation')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Navigasi
+                </button>
+            </div>
+            <div class="page-navigation">
+                <button class="nav-button prev" onclick="showReflection('peserta-didik')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Peserta Didik
+                </button>
+                <button class="nav-button next" onclick="showReflection('pembelajaran-mendalam')">
+                    Pembelajaran Mendalam
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="reflection-pembelajaran-mendalam" class="page reflection-page">
+        <div class="reflection-container">
+            <h1 class="reflection-title">Pembelajaran Mendalam dan Asesmen Dasar</h1>
+            <div class="reflection-content">
+                <div class="section">
+                    <h2>Connection</h2>
+                    <p>Mata kuliah ini menghubungkan saya dengan pemahaman bahwa pembelajaran yang bermakna memerlukan kedalaman, bukan sekadar menghafal.</p>
+                </div>
+                <div class="section">
+                    <h2>Challenge</h2>
+                    <p>Tantangan adalah mendesain pembelajaran yang mendorong pemikiran tingkat tinggi sambil tetap memenuhi tuntutan kurikulum yang luas.</p>
+                </div>
+                <div class="section">
+                    <h2>Concept</h2>
+                    <p>Konsep utama meliputi deep learning strategies, higher-order thinking skills (HOTS), dan asesmen formatif yang mendukung pembelajaran.</p>
+                </div>
+                <div class="section">
+                    <h2>Change</h2>
+                    <p>Saya berubah dari guru yang fokus pada penyelesaian materi menjadi guru yang fokus pada pemahaman mendalam dan aplikasi konsep.</p>
+                </div>
+                <div class="section">
+                    <h2>Artefak</h2>
+                    <div class="artefak-item">
+                        <strong>Artefak yang Dipilih:</strong> Desain asesmen formatif dan rubrik penilaian
+                    </div>
+                    <div class="artefak-reason">
+                        <strong>Alasan Memilih Artefak:</strong> Desain asesmen ini menunjukkan pemahaman saya tentang asesmen yang mendukung pembelajaran mendalam.
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Refleksi Pengalaman Belajar</h2>
+                    <p>Mata kuliah ini mengubah perspektif saya tentang asesmen. Saya belajar bahwa asesmen bukan hanya untuk mengukur, tetapi untuk meningkatkan pembelajaran. Konsep assessment for learning sangat relevan dengan praktik pembelajaran modern. Saya sekarang lebih terampil dalam merancang tugas-tugas yang mendorong analisis, evaluasi, dan kreasi, bukan sekadar recall informasi.</p>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="showPage('homepage')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Beranda
+                </button>
+                <button class="back-button" onclick="showPage('navigation')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Navigasi
+                </button>
+            </div>
+            <div class="page-navigation">
+                <button class="nav-button prev" onclick="showReflection('growth-mindset')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Growth Mindset
+                </button>
+                <button class="nav-button next" onclick="showReflection('computational-thinking')">
+                    Computational Thinking
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="reflection-computational-thinking" class="page reflection-page">
+        <div class="reflection-container">
+            <h1 class="reflection-title">Computational Thinking</h1>
+            <div class="ct-featured">
+                <img src="img/ct-reflection.jpg" alt="Computational Thinking Illustration">
+                <div class="ct-quote">
+                    <p class="quote-text">Cara berpikir untuk memecahkan masalah secara sistematis — tidak selalu dengan komputer, tetapi selalu dengan nalar yang runtut.</p>
+                    <p class="quote-subtext">Computational thinking adalah keterampilan dasar bagi setiap orang, bukan hanya ilmuwan komputer.</p>
+                    <p class="quote-author">— Jeannette M. Wing</p>
+                </div>
+            </div>
+            <div class="reflection-content">
+                <div class="section">
+                    <h2>Connection</h2>
+                    <p>Materi kuliah pada mata kuliah computational thinking sangat berkaitan dengan peran saya sebagai calon guru. Materi pada mata kuliah ini melatih saya untuk berpikir secara sistematis dalam memahami dan menyelesaikan berbagai permasalahan. Melalui empat komponen CT, yaitu dekomposisi, pengenalan pola, abstraksi, dan berpikir algoritmik, saya belajar untuk memecah masalah yang kompleks, menemukan pola, menentukan informasi yang penting, serta menyusun langkah penyelesaian yang logis. Sebagai calon guru matematika, pemahaman CT juga mengingatkan saya bahwa pembelajaran tidak seharusnya hanya berfokus pada hasil atau jawaban akhir, tetapi juga pada bagaimana murid membangun proses berpikir dalam menyelesaikan masalah secara logis, kritis, dan sistematis.</p>
+                </div>
+                <div class="section">
+                    <h2>Challenge</h2>
+                    <p>Tantangan yang saya rasakan dalam menerapkan Computational Thinking adalah memastikan bahwa penerapannya tidak hanya muncul secara tidak langsung melalui LKPD atau aktivitas pemecahan masalah, tetapi benar-benar disadari oleh murid sebagai suatu proses berpikir. Selama ini, saya sudah dapat merancang aktivitas yang secara tidak langsung melibatkan dekomposisi, pengenalan pola, abstraksi, dan berpikir algoritmik, tetapi saya masih perlu lebih memastikan apakah murid memahami proses berpikir yang sedang mereka lakukan dan apakah aktivitas tersebut benar-benar melatih mereka untuk berpikir secara terstruktur.</p>
+                </div>
+                <div class="section">
+                    <h2>Concept</h2>
+                    <p><strong>T1. Pendalaman Pemahaman CT</strong><br>
+                    Saya menyadari bahwa Computational Thinking (CT) tidak selalu berkaitan dengan komputer atau coding, tetapi merupakan keterampilan berpikir dalam memecahkan masalah secara sistematis. Saya memahami CT melalui empat fondasinya, yaitu dekomposisi, pengenalan pola, abstraksi, dan berpikir algoritmik, yang membantu seseorang memahami masalah dan menemukan solusi secara efektif dan efisien.</p>
+                    <p><strong>T2 & T3 CT dalam Problem Solving</strong><br>
+                    Saya memahami bahwa CT merupakan salah satu cara bernalar yang dapat diterapkan dalam menyelesaikan berbagai permasalahan, tidak hanya dalam konteks teknologi, tetapi juga dalam kehidupan sehari-hari serta permasalahan yang berkaitan dengan literasi dan numerasi. Melalui CT, saya belajar bahwa proses berpikir yang terstruktur dapat membantu seseorang menghadapi masalah yang kompleks dengan lebih sistematis.</p>
+                    <p><strong>T4. CT dalam Kurikulum Nasional</strong><br>
+                    Salah satu cara mengembangkan kecakapan CT pada murid adalah melalui kegiatan pembelajaran di sekolah. Dari pembahasan CT dalam kurikulum, saya memahami bahwa meskipun CT telah dikenalkan secara khusus melalui mata pelajaran Informatika, penerapannya tidak seharusnya terbatas pada mata pelajaran tersebut. Kecakapan CT perlu diintegrasikan ke dalam berbagai mata pelajaran agar murid terbiasa menggunakan cara berpikir komputasional dalam beragam konteks.</p>
+                    <p><strong>T5. CT dan Projek</strong><br>
+                    Pemahaman saya semakin berkembang melalui topik CT dan projek. Saya mempelajari bahwa keempat fondasi CT dapat digunakan untuk membantu murid menganalisis permasalahan yang kontekstual, mengolah informasi atau data, serta mengambil keputusan dalam proses pembelajaran berbasis projek. Hal ini menunjukkan bahwa CT dapat berkembang melalui aktivitas yang menuntut murid untuk berpikir, berkolaborasi, dan menghasilkan solusi.</p>
+                    <p><strong>T6. Integrasi CT dalam Mata Pelajaran</strong><br>
+                    Melalui topik integrasi CT dalam mata pelajaran, saya sebagai calon guru matematika memahami bahwa penerapan CT perlu dirancang secara sengaja dalam kegiatan pembelajaran. Saya tidak hanya perlu membuat aktivitas yang secara tidak langsung memuat unsur CT, tetapi juga perlu memastikan bahwa aktivitas tersebut benar-benar memberikan kesempatan kepada murid untuk melatih cara berpikir yang terstruktur.</p>
+                </div>
+                <div class="section">
+                    <h2>Change</h2>
+                    <p><strong>Beberapa perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan CT adalah:</strong></p>
+                    <p>1. Merancang aktivitas pembelajaran yang lebih sengaja melatih CT, bukan hanya memasukkan unsur dekomposisi, pengenalan pola, abstraksi, dan berpikir algoritmik secara tidak langsung dalam LKPD.</p>
+                    <p>2. Memastikan murid menyadari proses berpikir yang mereka lakukan, sehingga mereka tidak hanya menyelesaikan soal, tetapi memahami bagaimana mereka memecah dan menyelesaikan suatu masalah.</p>
+                    <p>3. Lebih memperhatikan proses daripada hanya hasil akhir, dengan memberikan apresiasi terhadap cara murid menganalisis masalah, menemukan pola, memilih informasi yang relevan, dan menyusun strategi penyelesaian.</p>
+                </div>
+                <div class="section">
+                    <h2>Artefak</h2>
+                    <div class="artefak-list">
+                        <div class="artefak-item">
+                            <strong>UAS Computational Thinking</strong>
+                            <a href="artefaks/UAS CT.pdf" target="_blank" class="download-link">
+                                📄 Download PDF
+                            </a>
+                            <div class="artefak-reason">
+                                <strong>Alasan Memilih:</strong> Artefak ini menunjukkan pemahaman komprehensif saya tentang Computational Thinking dan penerapannya dalam konteks pendidikan, termasuk integrasi CT dalam pembelajaran matematika dan kurikulum nasional.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Refleksi Pengalaman Belajar</h2>
+                    <p>Pembelajaran dalam mata kuliah Computational Thinking membuka wawasan saya bahwa CT bukan hanya tentang coding atau komputer, tetapi tentang cara berpikir sistematis dalam memecahkan masalah. Saya belajar bahwa empat pilar CT (dekomposisi, pengenalan pola, abstraksi, dan algoritma) dapat diterapkan dalam hampir semua mata pelajaran, terutama matematika. Ini sangat relevan dengan kebutuhan abad ke-21 di mana kemampuan memecahkan masalah kompleks sangat penting untuk kesuksesan siswa. Saya juga menyadari pentingnya merancang pembelajaran yang secara sengaja melatih CT, bukan hanya memasukkan unsur-unsurnya secara tidak langsung.</p>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="back-button" onclick="showPage('homepage')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Beranda
+                </button>
+                <button class="back-button" onclick="showPage('navigation')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Kembali ke Navigasi
+                </button>
+            </div>
+            <div class="page-navigation">
+                <button class="nav-button prev" onclick="showReflection('pembelajaran-mendalam')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Pembelajaran Mendalam
+                </button>
+                <button class="nav-button next" onclick="showPage('closing')">
+                    Penutup
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Closing Page -->
+    <div id="closing" class="page">
+        <div class="closing-container">
+            <div class="closing-illustration">
+                <img src="img/penutup.png" alt="Ilustrasi Penutup">
+            </div>
+            <h1 class="closing-title">Calon Guru Profesional</h1>
+            <p class="closing-quote">"Terus belajar, terus berkembang, terus bermanfaat."</p>
+            <div class="closing-message">
+                <p>Perjalanan ini bukan akhir, melainkan awal dari dedikasi saya untuk menjadi guru yang berdampak. Setiap mata kuliah, setiap refleksi, dan setiap pengalaman telah membentuk saya menjadi calon guru profesional yang siap mengabdi.</p>
+            </div>
+            <button class="cta-button" onclick="showPage('homepage')">
+                Kembali ke Beranda
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+            <div class="page-navigation">
+                <button class="nav-button prev" onclick="showReflection('computational-thinking')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Computational Thinking
+                </button>
+                <button class="nav-button next" onclick="showPage('navigation')">
+                    Navigasi
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
